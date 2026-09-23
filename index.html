@@ -136,7 +136,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #F2A541;outline-offset:3p
 <div id="q-findings"></div>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 6px;">
-<a id="q-mail" href="mailto:[removed]" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #F2A541; color: #14110B; font-weight: 800; font-size: 17px; text-decoration: none; border-radius: 4px;">Send my results to Stefann</a>
+<a id="q-mail" href="#contact" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #F2A541; color: #14110B; font-weight: 800; font-size: 17px; text-decoration: none; border-radius: 4px;">Send my results to Stefann</a>
 <button type="button" id="q-reset" style="min-height: 52px; padding: 0 24px; background: transparent; border: 1px solid #4A4F58; color: #ECE7DC; border-radius: 4px; font-size: 16px; cursor: pointer;">Start over</button>
 </div>
 </div>
@@ -206,7 +206,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #F2A541;outline-offset:3p
 <p style="margin: 0;">I'm Stefann. I grew up in a small fishing village in coastal Alaska. Out there, if something breaks, you fix it yourself, and you check your gear before you need it, not after.</p>
 <p style="margin: 0;">I spent my Navy years handling classified communications, then worked infrastructure for the State of Alaska. After that I kept 15 car dealerships and about 2,000 users up and running. These days I'm a senior engineer at one of the largest MSPs in the nation, looking after hundreds of servers for some very large customers.</p>
 <p style="margin: 0;">I've watched big providers treat small businesses like a ticket number. You should get the same quality of work a big company gets, from someone who answers his own phone and tells you straight what's wrong.</p>
-<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A9A497;">Based in Berlin, NH. Working anywhere Microsoft 365 does.</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A9A497;">Based in New Hampshire. Working anywhere Microsoft 365 does.</div>
 </div>
 </div>
 
@@ -277,16 +277,40 @@ a:focus-visible,button:focus-visible{outline:2px solid #F2A541;outline-offset:3p
 <div style="font-size: 17px; line-height: 1.6; color: #ECE7DC;">If I don't find at least three things worth fixing, you don't owe me anything.</div>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-<a href="mailto:[removed]?subject=Checkup%20request&amp;body=Hi%20Stefann%2C%0A%0AI%27d%20like%20to%20book%20a%20checkup.%0A%0ABusiness%20name%3A%0ANumber%20of%20users%3A%0AWho%20handles%20our%20IT%20today%3A%0ABest%20way%20to%20reach%20me%3A" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #F2A541; color: #14110B; font-weight: 800; font-size: 17px; text-decoration: none; border-radius: 4px;">Book a checkup</a>
+<a href="#contact" id="book" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; background: #F2A541; color: #14110B; font-weight: 800; font-size: 17px; text-decoration: none; border-radius: 4px;">Book a checkup</a>
 <a href="#test" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border: 1px solid #6B5A36; color: #ECE7DC; font-weight: 600; font-size: 17px; text-decoration: none; border-radius: 4px;">Take the test first</a>
 </div>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" style="border-top: 1px solid #262A31;">
+<div style="max-width: 1160px; margin: 0 auto; padding: 80px 32px; display: flex; flex-direction: column; gap: 20px;">
+<h2 style="margin: 0; font-size: clamp(30px, 4vw, 48px); line-height: 1.05; font-weight: 800;">Get in touch.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #D6D0C3; max-width: 680px;">Tell me a little about your business and I'll get back to you, usually within a day.</p>
+<form id="c-form" novalidate style="display: flex; flex-direction: column; gap: 18px; width: 100%; max-width: 680px;">
+<div style="display: flex; flex-wrap: wrap; gap: 18px;">
+<label style="flex: 1 1 260px; display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#A9A497;">YOUR NAME<input name="name" required autocomplete="name" style="width:100%;box-sizing:border-box;min-height:48px;padding:12px 14px;background:#0E1013;color:#ECE7DC;border:1px solid #4A4F58;border-radius:4px;font-family:'Bricolage Grotesque',Georgia,serif;font-size:16px;letter-spacing:0;"></label>
+<label style="flex: 1 1 260px; display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#A9A497;">EMAIL<input name="email" type="email" required autocomplete="email" style="width:100%;box-sizing:border-box;min-height:48px;padding:12px 14px;background:#0E1013;color:#ECE7DC;border:1px solid #4A4F58;border-radius:4px;font-family:'Bricolage Grotesque',Georgia,serif;font-size:16px;letter-spacing:0;"></label>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px;">
+<label style="flex: 1 1 260px; display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#A9A497;">BUSINESS NAME<input name="business" autocomplete="organization" style="width:100%;box-sizing:border-box;min-height:48px;padding:12px 14px;background:#0E1013;color:#ECE7DC;border:1px solid #4A4F58;border-radius:4px;font-family:'Bricolage Grotesque',Georgia,serif;font-size:16px;letter-spacing:0;"></label>
+<label style="flex: 1 1 260px; display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#A9A497;">NUMBER OF USERS<input name="users" inputmode="numeric" style="width:100%;box-sizing:border-box;min-height:48px;padding:12px 14px;background:#0E1013;color:#ECE7DC;border:1px solid #4A4F58;border-radius:4px;font-family:'Bricolage Grotesque',Georgia,serif;font-size:16px;letter-spacing:0;"></label>
+</div>
+<label style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#A9A497;">MESSAGE<textarea name="message" id="c-message" required rows="7" style="width:100%;box-sizing:border-box;min-height:48px;padding:12px 14px;background:#0E1013;color:#ECE7DC;border:1px solid #4A4F58;border-radius:4px;font-family:'Bricolage Grotesque',Georgia,serif;font-size:16px;letter-spacing:0;resize:vertical;line-height:1.5;"></textarea></label>
+<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px;">
+<button type="submit" id="c-send" style="min-height: 52px; padding: 0 28px; background: #F2A541; color: #14110B; border: 0; font-weight: 800; font-size: 17px; border-radius: 4px; cursor: pointer;">Send</button>
+<div id="c-status" role="status" aria-live="polite" style="font-size: 16px; line-height: 1.5; color: #D6D0C3;"></div>
+</div>
+</form>
 </div>
 </div>
 
 <!-- FOOTER -->
 <div style="border-top: 1px solid #262A31;">
 <div style="max-width: 1160px; margin: 0 auto; padding: 36px 32px 48px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.7; color: #A9A497;">
-<div>Scrivener Technology Professionals // Stefann Paddock, Berlin, NH // [removed]</div>
+<div>Scrivener Technology Professionals // Stefann Paddock, New Hampshire</div>
 <div style="max-width: 560px;">Sources: FBI Internet Crime Complaint Center, 2025 Internet Crime Report. Microsoft Digital Defense Report 2025. Average loss per case is total 2025 BEC losses divided by BEC complaints.</div>
 </div>
 </div>
@@ -295,12 +319,14 @@ a:focus-visible,button:focus-visible{outline:2px solid #F2A541;outline-offset:3p
 <script>
 // ===== EDIT THIS when a founding client signs up (0, 1, 2 or 3) =====
 var FOUNDING_SPOTS_CLAIMED = 0;
-var EMAIL = "[removed]";
+// Web3Forms access key (web3forms.com). Messages go to the inbox the key was made for.
+var FORM_KEY = "";
 // ====================================================================
 
 var Q = [["Does every single user, admins included, have MFA turned on and enforced?", "If even one account doesn't have MFA, a guessed password gets someone in. Almost all of these attacks are just password guessing, and MFA set up properly stops nearly all of them."], ["Do you have fewer than five Global Admins, and could you name every one of them?", "A Global Admin can change anything in your Microsoft 365. Attackers go after these accounts first, and the more of them you have, the more chances they get."], ["Is legacy authentication (old POP, IMAP, basic auth sign-ins) blocked in your tenant?", "These older sign-in methods don't support MFA at all. If they're still on, an attacker can use them to get around your MFA completely."], ["When someone leaves, is their account disabled the same day?", "Old accounts are often still licensed and can still sign in. If someone gets into one, nobody notices, because nobody is using it."], ["Do you have Conditional Access policies (or at least Security Defaults) turned on?", "Without Conditional Access, Microsoft 365 treats a sign-in from a strange country at 3 a.m. the same as one from your office on a Tuesday."], ["Could you list every third-party app your users have allowed into their email or files?", "Some phishing tricks don't steal a password at all. They get an employee to click Accept on a fake app, and that app can keep reading their email even after the password is changed."], ["Is your email domain protected with DMARC, so nobody can send email pretending to be you?", "Without DMARC, anyone can send email that looks like it came from your domain. That's how fake invoices land in your customers' inboxes with your name on them."], ["Have your service account passwords been changed in the last year?", "Old service account passwords are a favorite target. They often have broad access, never expire, and nobody remembers what uses them."], ["Are your backups tested, and would they survive an attacker with admin rights?", "Ransomware crews delete backups first. If an admin account can wipe your backups, then so can whoever steals that admin account."], ["Do you know whether you're paying for Microsoft 365 licenses nobody uses?", "Licenses for people who left, or plans bigger than you need, get billed every month. Cleaning this up often pays for the checkup."]];
 var BANDS = [["Tight ship. Probably.", "You're ahead of most small businesses. The catch is that this test only knows what you think is true. A checkup looks at the actual settings, and it often turns up some money you're wasting too. If I don't find anything worth fixing, you don't pay."], ["Cracks in the hull.", "None of this is unusual. These are the same gaps automated attacks check for all day long. They aren't hard to fix, but right now they're open."], ["The door is open.", "If an attacker looked at your setup tonight, they'd find several easy ways in. The average email-compromise loss reported to the FBI last year was around $123,000. The fixes for what you just described cost a small fraction of that."], ["You're already on someone's list.", "Automated tools are scanning for setups like this one around the clock. Almost everything you answered No or Not sure to can be fixed quickly and after hours, but I wouldn't wait on it."]];
 var answers = {};
+var resultsBody = "";
 var ON = "background:#F2A541;color:#14110B;border:1px solid #F2A541;";
 var OFF = "background:transparent;color:#ECE7DC;border:1px solid #4A4F58;";
 var BTN = "min-height:44px;padding:0 22px;border-radius:4px;font-size:16px;font-weight:600;cursor:pointer;";
@@ -360,7 +386,7 @@ function update(){
     fl.appendChild(r);
   });
   var body="Hi, I took the exposure test on your site.\n\nMy score: "+score+" / 20 ("+band[0]+")\nOpen items: "+findings.map(function(f){return f[0];}).join(", ")+"\n\nBusiness name:\nNumber of users:\nBest way to reach me:";
-  document.getElementById("q-mail").href="mailto:"+EMAIL+"?subject="+encodeURIComponent("Exposure test: "+score+"/20")+"&body="+encodeURIComponent(body);
+  resultsBody=body.replace("Hi, I took the exposure test on your site.\n\n","I took the exposure test.\n\n").replace(/\n\nBusiness name:[\s\S]*$/,"\n\n");
   if(wasHidden) res.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
@@ -376,6 +402,28 @@ function buildSpots(){
 
 document.getElementById("q-reset").addEventListener("click",function(){ answers={}; update(); document.getElementById("test").scrollIntoView({behavior:"smooth"}); });
 buildQuestions(); buildSpots(); update();
+function prefill(text){ var m=document.getElementById("c-message"); if(!m.value.trim()) m.value=text; }
+document.getElementById("q-mail").addEventListener("click",function(){ prefill(resultsBody); });
+document.getElementById("book").addEventListener("click",function(){ prefill("I'd like to book a checkup.\n\nWho handles our IT today:\n"); });
+
+document.getElementById("c-form").addEventListener("submit",function(e){
+  e.preventDefault();
+  var f=e.target, st=document.getElementById("c-status"), btn=document.getElementById("c-send");
+  if(!f.checkValidity()){ st.style.color="#FF8A7A"; st.textContent="Please fill in your name, a valid email, and a message."; return; }
+  if(!FORM_KEY){ st.style.color="#FF8A7A"; st.textContent="The contact form isn't switched on yet. Please try again soon."; return; }
+  var d={access_key:FORM_KEY, subject:"scrivener.pro: message from "+f.name.value, from_name:"scrivener.pro"};
+  ["name","email","business","users","message","botcheck"].forEach(function(k){ d[k]=f[k].type==="checkbox"?f[k].checked:f[k].value; });
+  btn.disabled=true; st.style.color="#D6D0C3"; st.textContent="Sending...";
+  fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(d)})
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+      if(!j.success) throw new Error(j.message||"failed");
+      f.reset(); st.style.color="#F2A541"; st.textContent="Thanks, it's on its way. I'll be in touch soon.";
+    })
+    .catch(function(){ st.style.color="#FF8A7A"; st.textContent="That didn't go through. Please try again in a minute."; })
+    .then(function(){ btn.disabled=false; });
+});
+
 </script>
 </body>
 </html>
